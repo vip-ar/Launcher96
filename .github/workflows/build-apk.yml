@@ -1,4 +1,7 @@
-
+name: Build Launcher96 APK
+on: workflow_dispatch: push: branches: - main
+jobs: build: name: Build Android APK runs-on: ubuntu-latest
+steps:
   - name: Checkout project
     uses: actions/checkout@v4
 
